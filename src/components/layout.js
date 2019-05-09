@@ -12,7 +12,7 @@ import "./base.css"
 
 const Layout = ({ children }) => (
   <div>
-    <Header siteTitle="Asaff"/>
+    <Header />
     { children }
   </div>
 )

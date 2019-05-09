@@ -1,42 +1,72 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
+import LogoImage from "./logo-image"
+
+class Header extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      selectedKeywordIndex: 0,
+      keywords: ['ICT', 'Shipping', 'Freight Forwarding']
+    }
+
+    this.setState = this.setState.bind(this)
+    let that = this
+
+    // setInterval(function () {
+    //   console.log('change selected keyword')
+    //   let { selectedKeywordIndex } = that.state
+    //   if (selectedKeywordIndex < 3) {
+    //     return that.setState({
+    //       selectedKeywordIndex: selectedKeywordIndex++
+    //     })
+    //   }
+
+    //   that.setState({
+    //     selectedKeywordIndex: 0
+    //   })
+    // }, 2000)
+  }
+
+  render() {
+    
+    return (
+        <header 
           style={{
-            color: `white`,
-            textDecoration: `none`,
+            textAlign: `center`
+          }}>
+          <div 
+            style={{
+            height: `43px`,
+            width: `43px`,
+            margin: `64px auto 38px auto`,
+            }}>
+            <LogoImage />
+          </div>
+          <p 
+            style={{
+            color: `#828282`,
           }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+          >
+            We can help you with
+          </p>
+          <h1
+            style={{
+              color: `#272C77`,
+              fontWeight: `bold`,
+              marginTop: `0`
+            }}>
+            {
+              this.state.keywords[this.state.selectedKeywordIndex]
+            }
+          </h1>
+        </header>
+      )
+  }
 }
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
+
+
+
 
 export default Header
