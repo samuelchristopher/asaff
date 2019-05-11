@@ -39,8 +39,9 @@ header
     color: $blue
     margin-top: 10px
 
-.companies__container
-    margin-top: 64px;
+.asaff-group-container
+    margin: 64px auto 0 auto
+    max-width: 300px
 
 .companies__asaff-group
     width: 218px
@@ -72,12 +73,12 @@ header
 
 .line__left--long
     height: 2px
-    width: 189px
+    width: 50.25%
     background: 
         color: $light-grey
 
 .line__down--long
-    height: 600px
+    height: 130%
     width: 2px
     background: 
         color: $light-grey
@@ -88,22 +89,34 @@ header
     display: flex
     // justify-content: center
     align-items: center
+    position: relative
 
 .line__left--short
     height: 2px
-    min-width: 21%
+    min-width: 13%
     background:
         color: $light-grey
 
-.company__card
+.company__header
     height: 94px
     width: 218px
     box-shadow: $shadow
     border-radius: 9px
     padding-top: 11px
+    position: relative
+    z-index: 2
 
-.company__content-container
+.company__content
     display: none
+    background: white
+    padding: 17px
+    color: $grey
+    margin-top: 20px
+
+    
+.company__description
+    font-size: .9em
+    
 
 .freight-forwarding-bg
     background:
@@ -115,5 +128,73 @@ header
     color: white
     text-shadow: $shadow
     text-align: left
-    margin-left: 17px
+    margin-left: 30px
     margin-top: 0
+    letter-spacing: 2px
+    // max-width: 70%
+
+.company__view-button
+    color: $blue
+    background: white
+    border-radius: 0 5px 0 9px
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 83px
+    height: 36px
+    text-align: center
+    cursor: pointer
+    display: flex
+    justify-content: center
+    align-items: center
+    text-transform: uppercase
+
+.header--open
+    width: 100%
+    position: absolute
+    top: 0
+    border-radius: 0
+    // width: 375px
+
+.close-button
+    border-radius: 0
+    left: 30px
+
+.show-content
+    display: block
+
+.companies__container
+    margin: 0 auto
+    max-width: 300px
+
+.container--open
+    max-width: none
+
+.content--show
+    display: block
+    background: white
+    box-shadow: $shadow
+    position: absolute
+    left: 0
+    top: 75px
+    padding: 30px
+
+.company__logos-container
+    margin-top: 50px
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+.logos__title
+    color: $blue
+    text-transform: uppercase
+    text-align: center
+    margin: 0
+
+
+.logo
+    max-width: 260px
+    margin: 30px auto
+
+.company__block
+    height: 850px

@@ -338,8 +338,9 @@ header {
   color: #272C77;
   margin-top: 10px; }
 
-.companies__container {
-  margin-top: 64px; }
+.asaff-group-container {
+  margin: 64px auto 0 auto;
+  max-width: 300px; }
 
 .companies__asaff-group {
   width: 218px;
@@ -375,11 +376,11 @@ header {
 
 .line__left--long {
   height: 2px;
-  width: 189px;
+  width: 50.25%;
   background-color: #82828240; }
 
 .line__down--long {
-  height: 600px;
+  height: 130%;
   width: 2px;
   background-color: #82828240;
   position: absolute; }
@@ -391,23 +392,33 @@ header {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
 
 .line__left--short {
   height: 2px;
-  min-width: 21%;
+  min-width: 13%;
   background-color: #82828240; }
 
-.company__card {
+.company__header {
   height: 94px;
   width: 218px;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   border-radius: 9px;
-  padding-top: 11px; }
+  padding-top: 11px;
+  position: relative;
+  z-index: 2; }
 
-.company__content-container {
-  display: none; }
+.company__content {
+  display: none;
+  background: white;
+  padding: 17px;
+  color: #828282;
+  margin-top: 20px; }
+
+.company__description {
+  font-size: .9em; }
 
 .freight-forwarding-bg {
   background-image: url("images/freight-forwarding.png");
@@ -418,5 +429,84 @@ header {
   color: white;
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   text-align: left;
-  margin-left: 17px;
-  margin-top: 0; }
+  margin-left: 30px;
+  margin-top: 0;
+  letter-spacing: 2px; }
+
+.company__view-button {
+  color: #272C77;
+  background: white;
+  border-radius: 0 5px 0 9px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 83px;
+  height: 36px;
+  text-align: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-transform: uppercase; }
+
+.header--open {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  border-radius: 0; }
+
+.close-button {
+  border-radius: 0;
+  left: 30px; }
+
+.show-content {
+  display: block; }
+
+.companies__container {
+  margin: 0 auto;
+  max-width: 300px; }
+
+.container--open {
+  max-width: none; }
+
+.content--show {
+  display: block;
+  background: white;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  position: absolute;
+  left: 0;
+  top: 75px;
+  padding: 30px; }
+
+.company__logos-container {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.logos__title {
+  color: #272C77;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0; }
+
+.logo {
+  max-width: 260px;
+  margin: 30px auto; }
+
+.company__block {
+  height: 850px; }
