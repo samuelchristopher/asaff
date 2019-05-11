@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700')
+@import base
+
+
+$grey: #828282
+$light-grey: #82828240
+$blue: #272C77
+$box-shadow-color: rgba(0,0,0,.16)
+$shadow: 0 3px 6px $box-shadow-color
+
+html
+    font-family: 'Poppins', sans-serif
+
+.mobile__container 
+    max-width: 375px
+    margin: 0 auto
+
+header
+    margin-top: 64px
+
+.asaff-logo
+    height: 43px
+    width: 43px
+    background: 
+        image: url('images/asaff-logo-blue.png')
+        size: cover
+        position: center center
+    margin: 0 auto
+
+.tagline__container 
+    text-align: center
+    margin-top: 38px
+
+.tagline__static
+    color: $grey
+    margin: 0
+
+.tagline__dynamic
+    color: $blue
+    margin-top: 10px
+
+.companies__container
+    margin-top: 64px;
+
+.companies__asaff-group
+    width: 218px
+    height: 40px
+    box-shadow: $shadow
+    border-radius: 9px
+    margin: 0 auto
+    background: 
+        image: url('images/asaff-card-bg-alt.png')
+        size: cover
+        position: center center
+
+    display: flex
+    justify-content: center
+    align-items: center
+
+.asaff-group__title
+    color: white
+    text-align: center
+    text-shadow: $shadow
+    letter-spacing: 2px
+
+.line__down--short
+    height: 30px
+    width: 2px
+    background: 
+        color: $light-grey
+    margin: 0 auto
+
+.line__left--long
+    height: 2px
+    width: 189px
+    background: 
+        color: $light-grey
+
+.line__down--long
+    height: 600px
+    width: 2px
+    background: 
+        color: $light-grey
+    position: absolute
+
+.company__container
+    margin-top: 40px 
+    display: flex
+    // justify-content: center
+    align-items: center
+
+.line__left--short
+    height: 2px
+    min-width: 21%
+    background:
+        color: $light-grey
+
+.company__card
+    height: 94px
+    width: 218px
+    box-shadow: $shadow
+    border-radius: 9px
+    padding-top: 11px
+
+.company__content-container
+    display: none
+
+.freight-forwarding-bg
+    background:
+        image: url('images/freight-forwarding.png')
+        size: cover
+        position: center center
+
+.company__title
+    color: white
+    text-shadow: $shadow
+    text-align: left
+    margin-left: 17px
+    margin-top: 0
