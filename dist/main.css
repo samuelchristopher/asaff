@@ -309,7 +309,8 @@ template {
   display: none; }
 
 html {
-  font-family: 'Poppins', sans-serif; }
+  font-family: 'Poppins', sans-serif;
+  color: #828282; }
 
 .mobile__container {
   max-width: 375px;
@@ -510,3 +511,50 @@ header {
 
 .company__block {
   height: 850px; }
+
+.section__title {
+  color: #272C77;
+  text-align: center; }
+
+footer {
+  height: 288px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: white;
+  overflow: hidden;
+  position: relative;
+  text-align: center; }
+
+.swoosh {
+  height: 100%;
+  width: 100%;
+  background-image: url("images/footer-bg.svg");
+  background-position: center center;
+  position: absolute;
+  z-index: -1;
+  top: 95px; }
+
+.footer__block {
+  margin-top: 180px; }
+
+.footer__copyright {
+  line-height: 24px; }
+
+section {
+  max-width: 300px;
+  margin: 0 auto; }
+
+.contact__section {
+  text-align: center;
+  margin-top: 40px; }
