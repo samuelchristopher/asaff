@@ -1,0 +1,134 @@
+$grey: #828282
+$light-grey: #82828240
+$blue: #272C77
+$box-shadow-color: rgba(0,0,0,.16)
+$shadow: 0 3px 6px $box-shadow-color
+    
+.company__container
+    margin-top: 40px 
+    display: flex
+    // justify-content: center
+    align-items: center
+    position: relative
+
+.line__leftShort
+    height: 2px
+    min-width: 13%
+    background:
+        color: $light-grey
+
+.company__header
+    height: 94px
+    width: 218px
+    box-shadow: $shadow
+    border-radius: 9px
+    padding-top: 11px
+    position: relative
+    z-index: 2
+
+.company__content
+    display: none
+    background: white
+    padding: 17px
+    color: $grey
+    margin-top: 20px
+
+    
+.company__description
+    font-size: .9em
+    
+
+.freightForwardingBg
+    background:
+        image: url(../../assets/images/freight-forwarding.png)
+        size: cover
+        position: center center
+
+.company__title
+    color: white
+    text-shadow: $shadow
+    text-align: left
+    margin-left: 30px
+    margin-top: 0
+    letter-spacing: 2px
+    // max-width: 70%
+
+.company__viewButton
+    color: $blue
+    background: white
+    border-radius: 0 5px 0 9px
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 83px
+    height: 36px
+    text-align: center
+    cursor: pointer
+    display: flex
+    justify-content: center
+    align-items: center
+    text-transform: uppercase
+
+.headerOpen
+    width: 100%
+    position: absolute
+    top: 0
+    border-radius: 9px 9px 0 0
+    // width: 375px
+
+.closeButton
+    border-radius: 0
+    left: 30px
+
+.showContent
+    display: block
+
+.companies__container
+    margin: 0 auto
+    max-width: 300px
+
+.containerOpen
+    max-width: none
+
+.contentShow
+    display: block
+    background: white
+    box-shadow: $shadow
+    position: absolute
+    left: 0
+    top: 75px
+    padding: 30px
+    border-radius: 0 0 9px 9px
+
+.company__logosContainer
+    margin-top: 50px
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+.logos__title
+    color: $blue
+    text-transform: uppercase
+    text-align: center
+    margin: 0
+
+
+.logo
+    max-width: 260px
+    margin: 30px auto
+    height: 50px
+    width: 70%
+    background:
+        position: center center
+        size: contain
+        repeat: no-repeat
+.company__block
+    height: 850px
+
+.icts 
+    background: 
+        image: url(../../assets/images/freight-forwarding/icts.jpg)
+        
+.team 
+    background: 
+        image: url(../../assets/images/freight-forwarding/team.jpg)
