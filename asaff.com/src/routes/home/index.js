@@ -74,6 +74,32 @@ const Home = () => (
 			bgClass="maruniBg"
 			desc="Maruni United Industries Sdn Bhd., is a Bumiputra Company established in the year 2012 & focusing in the Oil & Gas as its core business activities. Namely, Pipeline Equipment & Accessories, Estate maintenance and Facilities Services, Personal Protective Equipment Suppliers"
 			/>
+		<CompanyCard 
+			companyName="Harbour Link Lines (B) Sdn Bhd"
+			bgClass="harbourBg"
+			desc="We provide Shipping Routing Services and we are partners with Harbour Link Group Berhad"
+			logos={[
+				{
+					title: 'partners',
+					logoClasses: ['harbour']
+				}
+			]}
+			/>
+		<CompanyCard 
+			companyName="Nurasa Construction & Maintenance"
+			bgClass="constructionBg"
+			desc="We provide Building and Road Constructions, Civil Works in Landscaping, Roads and Earthworks"
+			logos={[
+				{
+					title: 'partners',
+					logoClasses: ['pbd']
+				},
+				{
+					title: 'accredited by',
+					logoClasses: ['mindev']
+				}
+			]}
+			/>
 		<ContactSection />
 	</div>
 );
