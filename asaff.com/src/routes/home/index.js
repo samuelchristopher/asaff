@@ -39,6 +39,21 @@ const Home = () => (
 				}
 			]}
 			/>
+		<CompanyCard 
+			companyName="ASAFF Solutions"
+			bgClass="solutionsBg"
+			desc="We offer training & seminar on ICT & Telecommunication, telecommunication Solution & ICT, Telecommunication Equipment"
+			logos={[
+				{
+					title: 'partners',
+					logoClasses: [ 'dst', 'progresif', 'telbru', 'ibm' ]
+				},
+				{
+					title: 'accredited by',
+					logoClasses: ['aiti']
+				}
+			]}
+			/>
 		<ContactSection />
 	</div>
 );
