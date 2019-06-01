@@ -28,30 +28,36 @@ class CompanyCard extends Component {
             return <LogoList item={item} key={key}/>
         })
         return (
-            <div class={
-                isOpen ? `${style.companies__container} ${style.containerOpen}` : style.companies__container                
-            }>
+            <div>
+
                 <div class={
-                    isOpen ? `${style.company__container} ${style.company__block}` : style.company__container
+                    isOpen ? `${style.companies__container} ${style.containerOpen}` : style.companies__container                
                 }>
-                    <div class={style.line__leftShort}></div>
                     <div class={
-                        isOpen ? `${style.company__header} ${backgroundClass} ${style.headerOpen}` : `${style.company__header} ${backgroundClass}`
+                        isOpen ? `${style.company__container} ${style.company__block}` : style.company__container
                     }>
-                        <h4 class={style.company__title}>{ companyName }</h4>
-                        <div onClick={this.toggleIsOpen} class={
-                            isOpen ? `${style.company__viewButton} ${style.closeButton}`: style.company__viewButton }
-                        >
-                            <h4 class={style.viewButton__text}>{ isOpen ? 'close' : 'view' }</h4>
+                        <div class={style.line__leftShort}></div>
+                        <div class={
+                            isOpen ? `${style.company__header} ${backgroundClass} ${style.headerOpen}` : `${style.company__header} ${backgroundClass}`
+                        }>
+                            <h4 class={style.company__title}>{ companyName }</h4>
+                            <div onClick={this.toggleIsOpen} class={
+                                isOpen ? `${style.company__viewButton} ${style.closeButton}`: style.company__viewButton }
+                            >
+                                <h4 class={style.viewButton__text}>{ isOpen ? 'close' : 'view' }</h4>
+                            </div>
+                        </div>
+                        <div class={
+                            isOpen ? `${style.company__content} ${style.contentShow}`: style.company__content
+                        }>
+                            <p class={style.company__description}>{ desc }</p>
+                            { logosComponents }
                         </div>
                     </div>
-                    <div class={
-                        isOpen ? `${style.company__content} ${style.contentShow}`: style.company__content
-                    }>
-                        <p class={style.company__description}>{ desc }</p>
-                        { logosComponents }
-                    </div>
                 </div>
+                <div class={
+                    isOpen ? style.pushDown : ''
+                }/>
             </div>
         )
     }

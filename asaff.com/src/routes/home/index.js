@@ -28,6 +28,17 @@ const Home = () => (
 				}
 			]}
 			/>
+		<CompanyCard 
+			companyName="ASAFF Mutiara Marine"
+			bgClass="mutiaraMarineBg"
+			desc="We offer Shipping Services, Shipping Routing Services, Marine Services – Oil &amp; Gas."
+			logos={[
+				{
+					title: 'partners',
+					logoClasses: [ 'simatech', 'mmv', 'asiangeos' ]
+				}
+			]}
+			/>
 		<ContactSection />
 	</div>
 );
