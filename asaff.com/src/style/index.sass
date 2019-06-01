@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700')
+@import base
+
+
+$grey: #828282
+$light-grey: #82828240
+$blue: #272C77
+$box-shadow-color: rgba(0,0,0,.16)
+$shadow: 0 3px 6px $box-shadow-color
+
+html
+    font-family: 'Poppins', sans-serif
+    color: $grey
+
+.mobile__container 
+    max-width: 375px
+    margin: 0 auto
+
+header
+    margin-top: 64px
+
+.asaff-logo
+    height: 43px
+    width: 43px
+    background: 
+        image: url('images/asaff-logo-blue.png')
+        size: cover
+        position: center center
+    margin: 0 auto
+
+.tagline__container 
+    text-align: center
+    margin-top: 38px
+
+.tagline__static
+    color: $grey
+    margin: 0
+
+.tagline__dynamic
+    color: $blue
+    margin-top: 10px
+
+.asaff-group-container
+    margin: 64px auto 0 auto
+    max-width: 300px
+
+.companies__asaff-group
+    width: 218px
+    height: 40px
+    box-shadow: $shadow
+    border-radius: 9px
+    margin: 0 auto
+    background: 
+        image: url('images/asaff-card-bg-alt.png')
+        size: cover
+        position: center center
+
+    display: flex
+    justify-content: center
+    align-items: center
+
+.asaff-group__title
+    color: white
+    text-align: center
+    text-shadow: $shadow
+    letter-spacing: 2px
+
+.line__down--short
+    height: 30px
+    width: 2px
+    background: 
+        color: $light-grey
+    margin: 0 auto
+
+.line__left--long
+    height: 2px
+    width: 50.25%
+    background: 
+        color: $light-grey
+
+.line__down--long
+    height: 130%
+    width: 2px
+    background: 
+        color: $light-grey
+    position: absolute
+
+.company__container
+    margin-top: 40px 
+    display: flex
+    // justify-content: center
+    align-items: center
+    position: relative
+
+.line__left--short
+    height: 2px
+    min-width: 13%
+    background:
+        color: $light-grey
+
+.company__header
+    height: 94px
+    width: 218px
+    box-shadow: $shadow
+    border-radius: 9px
+    padding-top: 11px
+    position: relative
+    z-index: 2
+
+.company__content
+    display: none
+    background: white
+    padding: 17px
+    color: $grey
+    margin-top: 20px
+
+    
+.company__description
+    font-size: .9em
+    
+
+.freight-forwarding-bg
+    background:
+        image: url('images/freight-forwarding.png')
+        size: cover
+        position: center center
+
+.company__title
+    color: white
+    text-shadow: $shadow
+    text-align: left
+    margin-left: 30px
+    margin-top: 0
+    letter-spacing: 2px
+    // max-width: 70%
+
+.company__view-button
+    color: $blue
+    background: white
+    border-radius: 0 5px 0 9px
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 83px
+    height: 36px
+    text-align: center
+    cursor: pointer
+    display: flex
+    justify-content: center
+    align-items: center
+    text-transform: uppercase
+
+.header--open
+    width: 100%
+    position: absolute
+    top: 0
+    border-radius: 0
+    // width: 375px
+
+.close-button
+    border-radius: 0
+    left: 30px
+
+.show-content
+    display: block
+
+.companies__container
+    margin: 0 auto
+    max-width: 300px
+
+.container--open
+    max-width: none
+
+.content--show
+    display: block
+    background: white
+    box-shadow: $shadow
+    position: absolute
+    left: 0
+    top: 75px
+    padding: 30px
+
+.company__logos-container
+    margin-top: 50px
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+.logos__title
+    color: $blue
+    text-transform: uppercase
+    text-align: center
+    margin: 0
+
+
+.logo
+    max-width: 260px
+    margin: 30px auto
+
+.company__block
+    height: 850px
+
+.section__title
+    color: $blue
+    text-align: center
+
+footer
+    height: 288px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    color: white
+    overflow: hidden
+    position: relative
+    text-align: center
+
+.swoosh
+    height: 135%
+    width: 184%
+    background: 
+        image: url('images/footer-bg.svg')
+        size: cover
+        position: center center
+    position: absolute
+    z-index: -1
+    top: 40px
+
+.footer__block
+    margin-top: 160px
+
+.footer__copyright
+    line-height: 24px
+
+section 
+    max-width: 300px
+    margin: 0 auto
+
+.contact__section
+    text-align: center
+    margin-top: 40px
