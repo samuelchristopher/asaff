@@ -54,6 +54,21 @@ const Home = () => (
 				}
 			]}
 			/>
+		<CompanyCard 
+			companyName="Circle Freight International"
+			bgClass="circleBg"
+			desc="CIRCLE is the appointed agent for CEVA Worldwide for handling goods of Multi-National Companies Shipments via Air & Sea for Oil & Gas and other Industry. In 2011 & 2013, CIRCLE has been appointed by Royal Brunei Technical Services (RBTS) to handle all the Incoming & Outgoing shipment for the international Exhibitors who participated in the Brunei Darussalam International Defense Exhibition & Conference"
+			logos={[
+				{
+					title: 'partners',
+					logoClasses: [ 'ceva' ]
+				},
+				{
+					title: 'clients',
+					logoClasses: ['rbts']
+				}
+			]}
+			/>
 		<ContactSection />
 	</div>
 );
