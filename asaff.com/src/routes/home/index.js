@@ -20,11 +20,11 @@ const Home = () => (
 			logos={[
 				{
 					title: 'partners',
-					logoClasses: [ 'icts', 'team' ]
+					logoClasses: [ 'icts', 'team', 'santafe' ]
 				},
 				{
 					title: 'clients',
-					logoClasses: ['icts', 'icts', 'team', 'icts']
+					logoClasses: ['shell', 'bsm', 'lng', 'bstbgc', 'mindef', 'mmw']
 				}
 			]}
 			/>
