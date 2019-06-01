@@ -1,6 +1,7 @@
 import { h } from 'preact';
 import style from './style.sass';
 import CompanyCard from '../../components/companyCard'
+import ContactSection from '../../components/contactSection'
 
 const Home = () => (
 	<div class={style.mobile__container}>
@@ -13,6 +14,7 @@ const Home = () => (
 			<div class={style.line__downLong}></div>
 		</div>
 		<CompanyCard />
+		<ContactSection />
 	</div>
 );
 
