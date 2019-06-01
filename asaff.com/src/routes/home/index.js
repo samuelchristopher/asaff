@@ -15,6 +15,7 @@ const Home = () => (
 		</div>
 		<CompanyCard 
 			companyName="Abdul Saman Ahmad Freight Forwarding"
+			blockClass="freightBlock"
 			bgClass="freightForwardingBg"
 			desc="We offer Muara Container Terminal Operation, International Freight Forwarding Services, International Relocation Services, Warehousing Services."
 			logos={[
@@ -31,6 +32,8 @@ const Home = () => (
 		<CompanyCard 
 			companyName="ASAFF Mutiara Marine"
 			bgClass="mutiaraMarineBg"
+			blockClass="mutiaraBlock"
+			pushDown="30px"
 			desc="We offer Shipping Services, Shipping Routing Services, Marine Services – Oil &amp; Gas."
 			logos={[
 				{
@@ -42,6 +45,8 @@ const Home = () => (
 		<CompanyCard 
 			companyName="ASAFF Solutions"
 			bgClass="solutionsBg"
+			blockClass="solutionsBlock"
+			pushDown="30px"
 			desc="We offer training & seminar on ICT & Telecommunication, telecommunication Solution & ICT, Telecommunication Equipment"
 			logos={[
 				{
@@ -57,6 +62,8 @@ const Home = () => (
 		<CompanyCard 
 			companyName="Circle Freight International"
 			bgClass="circleBg"
+			blockClass="circleBlock"
+			pushDown="30px"
 			desc="CIRCLE is the appointed agent for CEVA Worldwide for handling goods of Multi-National Companies Shipments via Air & Sea for Oil & Gas and other Industry. In 2011 & 2013, CIRCLE has been appointed by Royal Brunei Technical Services (RBTS) to handle all the Incoming & Outgoing shipment for the international Exhibitors who participated in the Brunei Darussalam International Defense Exhibition & Conference"
 			logos={[
 				{
@@ -72,11 +79,15 @@ const Home = () => (
 		<CompanyCard 
 			companyName="Maruni United Industries"
 			bgClass="maruniBg"
+			blockClass="maruniBlock"
+			pushDown="30px"
 			desc="Maruni United Industries Sdn Bhd., is a Bumiputra Company established in the year 2012 & focusing in the Oil & Gas as its core business activities. Namely, Pipeline Equipment & Accessories, Estate maintenance and Facilities Services, Personal Protective Equipment Suppliers"
 			/>
 		<CompanyCard 
 			companyName="Harbour Link Lines (B) Sdn Bhd"
 			bgClass="harbourBg"
+			blockClass="harbourBlock"
+			pushDown="30px"
 			desc="We provide Shipping Routing Services and we are partners with Harbour Link Group Berhad"
 			logos={[
 				{
@@ -88,6 +99,8 @@ const Home = () => (
 		<CompanyCard 
 			companyName="Nurasa Construction & Maintenance"
 			bgClass="constructionBg"
+			blockClass="constructionBlock"
+			pushDown="30px"
 			desc="We provide Building and Road Constructions, Civil Works in Landscaping, Roads and Earthworks"
 			logos={[
 				{

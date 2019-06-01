@@ -8,14 +8,19 @@ footer
     overflow: hidden
     position: relative
     text-align: center
+    background: 
+        image: url(../../assets/images/footer-bg.svg)
+        size: 680px
+        position: center -90px
+        repeat: no-repeat
 
 .swoosh
     height: 135%
     width: 184%
-    background: 
-        image: url(../../assets/images/footer-bg.svg)
-        size: cover
-        position: center center
+    // background: 
+    //     image: url(../../assets/images/footer-bg.svg)
+    //     size: cover
+    //     position: center center
     position: absolute
     z-index: -1
     top: 40px
@@ -25,3 +30,8 @@ footer
 
 .footer__copyright
     line-height: 24px
+
+@media only screen and (min-width: 500px) 
+    .swoosh
+        background: 
+            size: contain

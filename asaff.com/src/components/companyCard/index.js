@@ -21,8 +21,9 @@ class CompanyCard extends Component {
 
     render() {
         let { isOpen } = this.state
-        let { companyName, desc, logos, bgClass } = this.props
+        let { companyName, desc, logos, bgClass, blockClass } = this.props
         let backgroundClass = style[`${bgClass}`]
+        let companyBlock = style[`${blockClass}`]
         let logosComponents
         if (logos) {
             logosComponents = logos.map((item, key) => {
@@ -36,7 +37,7 @@ class CompanyCard extends Component {
                     isOpen ? `${style.companies__container} ${style.containerOpen}` : style.companies__container                
                 }>
                     <div class={
-                        isOpen ? `${style.company__container} ${style.company__block}` : style.company__container
+                        isOpen ? `${style.company__container} ${companyBlock}` : style.company__container
                     }>
                         <div class={style.line__leftShort}></div>
                         <div class={
@@ -57,9 +58,6 @@ class CompanyCard extends Component {
                         </div>
                     </div>
                 </div>
-                <div class={
-                    isOpen ? style.pushDown : ''
-                }/>
             </div>
         )
     }
