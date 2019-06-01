@@ -13,7 +13,21 @@ const Home = () => (
 			<div class={style.line__leftLong}></div>
 			<div class={style.line__downLong}></div>
 		</div>
-		<CompanyCard />
+		<CompanyCard 
+			companyName="Abdul Saman Ahmad Freight Forwarding"
+			bgClass="freightForwardingBg"
+			desc="We offer Muara Container Terminal Operation, International Freight Forwarding Services, International Relocation Services, Warehousing Services."
+			logos={[
+				{
+					title: 'partners',
+					logoClasses: [ 'icts', 'team' ]
+				},
+				{
+					title: 'clients',
+					logoClasses: ['icts', 'icts', 'team', 'icts']
+				}
+			]}
+			/>
 		<ContactSection />
 	</div>
 );

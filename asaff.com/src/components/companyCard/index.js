@@ -1,5 +1,6 @@
 import { h, Component } from "preact"
-import style from './style.sass'
+import style from "./style.sass"
+import LogoList from "./logoList";
 
 class CompanyCard extends Component {
     constructor() {
@@ -20,6 +21,12 @@ class CompanyCard extends Component {
 
     render() {
         let { isOpen } = this.state
+        let { companyName, desc, logos, bgClass } = this.props
+        let backgroundClass = style[`${bgClass}`]
+
+        let logosComponents = logos.map((item, key) => {
+            return <LogoList item={item} key={key}/>
+        })
         return (
             <div class={
                 isOpen ? `${style.companies__container} ${style.containerOpen}` : style.companies__container                
@@ -29,9 +36,9 @@ class CompanyCard extends Component {
                 }>
                     <div class={style.line__leftShort}></div>
                     <div class={
-                        isOpen ? `${style.company__header} ${style.freightForwardingBg} ${style.headerOpen}` : `${style.company__header} ${style.freightForwardingBg}`
+                        isOpen ? `${style.company__header} ${backgroundClass} ${style.headerOpen}` : `${style.company__header} ${backgroundClass}`
                     }>
-                        <h4 class={style.company__title}>Abdul Saman Ahmad Freight Forwarding</h4>
+                        <h4 class={style.company__title}>{ companyName }</h4>
                         <div onClick={this.toggleIsOpen} class={
                             isOpen ? `${style.company__viewButton} ${style.closeButton}`: style.company__viewButton }
                         >
@@ -41,17 +48,8 @@ class CompanyCard extends Component {
                     <div class={
                         isOpen ? `${style.company__content} ${style.contentShow}`: style.company__content
                     }>
-                        <p class={style.company__description}>We offer Muara Container Terminal Operation, International Freight Forwarding Services, International Relocation Services, Warehousing Services.</p>
-                        <div class={style.company__logosContainer}>
-                            <h5 class={style.logos__title}>partners</h5>
-                            <div class={`${style.logo} ${style.icts}`} />
-                            <div class={`${style.logo} ${style.team}`} />
-                        </div>
-                        <div class={style.company__logosContainer}>
-                            <h5 class={style.logos__title}>clients</h5>
-                            <div class={`${style.logo} ${style.icts}`} />
-                            <div class={`${style.logo} ${style.team}`} />
-                        </div>
+                        <p class={style.company__description}>{ desc }</p>
+                        { logosComponents }
                     </div>
                 </div>
             </div>
