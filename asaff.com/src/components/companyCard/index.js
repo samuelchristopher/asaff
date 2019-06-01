@@ -23,10 +23,12 @@ class CompanyCard extends Component {
         let { isOpen } = this.state
         let { companyName, desc, logos, bgClass } = this.props
         let backgroundClass = style[`${bgClass}`]
-
-        let logosComponents = logos.map((item, key) => {
-            return <LogoList item={item} key={key}/>
-        })
+        let logosComponents
+        if (logos) {
+            logosComponents = logos.map((item, key) => {
+                return <LogoList item={item} key={key}/>
+            })
+        }
         return (
             <div>
 

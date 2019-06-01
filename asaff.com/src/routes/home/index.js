@@ -69,6 +69,11 @@ const Home = () => (
 				}
 			]}
 			/>
+		<CompanyCard 
+			companyName="Maruni United Industries"
+			bgClass="maruniBg"
+			desc="Maruni United Industries Sdn Bhd., is a Bumiputra Company established in the year 2012 & focusing in the Oil & Gas as its core business activities. Namely, Pipeline Equipment & Accessories, Estate maintenance and Facilities Services, Personal Protective Equipment Suppliers"
+			/>
 		<ContactSection />
 	</div>
 );
