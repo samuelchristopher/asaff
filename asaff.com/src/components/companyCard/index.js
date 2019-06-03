@@ -21,23 +21,36 @@ class CompanyCard extends Component {
 
     render() {
         let { isOpen } = this.state
-        let { companyName, desc, logos, bgClass, blockClass } = this.props
+        let { companyName, desc, logos, bgClass, blockClass, isConstruction } = this.props
         let backgroundClass = style[`${bgClass}`]
         let companyBlock = style[`${blockClass}`]
         let logosComponents
+        let extraClass
         if (logos) {
             logosComponents = logos.map((item, key) => {
                 return <LogoList item={item} key={key}/>
             })
         }
+
+        if (isConstruction) {
+            extraClass = style.constructionNoBorder
+        } else {
+            isConstruction = false
+        }
         return (
             <div>
-
+                <div class={
+                    (isOpen && !isConstruction) ? style.topLine : ''
+                }/>
+                <div class={
+                    bgClass === 'constructionBg' ? style.constructionLine : ''
+                }/>
+                
                 <div class={
                     isOpen ? `${style.companies__container} ${style.containerOpen}` : style.companies__container                
                 }>
                     <div class={
-                        isOpen ? `${style.company__container} ${companyBlock}` : style.company__container
+                        isOpen ? `${style.company__container} ${companyBlock}` : `${style.company__container} ${extraClass}`
                     }>
                         <div class={style.line__leftShort}></div>
                         <div class={

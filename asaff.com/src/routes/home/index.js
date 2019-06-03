@@ -101,6 +101,7 @@ const Home = () => (
 			bgClass="constructionBg"
 			blockClass="constructionBlock"
 			pushDown="30px"
+			isConstruction={true}
 			desc="We provide Building and Road Constructions, Civil Works in Landscaping, Roads and Earthworks"
 			logos={[
 				{
