@@ -1,11 +1,11 @@
 {
-  "name": "asaff.com",
-  "short_name": "asaff.com",
+  "name": "ASAFF Group",
+  "short_name": "ASAFF Group",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#fff",
-  "theme_color": "#673ab8",
+  "theme_color": "#272C77",
   "icons": [
     {
       "src": "/assets/icons/android-chrome-192x192.png",
