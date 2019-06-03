@@ -1,5 +1,5 @@
 footer
-    height: 288px
+    // height: 288px
     display: flex
     flex-direction: column
     justify-content: center
@@ -9,9 +9,9 @@ footer
     position: relative
     text-align: center
     background: 
-        image: url(../../assets/images/footer-bg.svg)
-        size: 680px
-        position: center -90px
+        image: url(../../assets/images/asaff-middle-part-cut-with-curves.svg)
+        size: cover
+        position: center center
         repeat: no-repeat
 
 .swoosh
@@ -33,5 +33,10 @@ footer
 
 @media only screen and (min-width: 500px) 
     .swoosh
+        background: 
+            size: contain
+
+@media only screen and (min-width: 630px) 
+    footer
         background: 
             size: contain
