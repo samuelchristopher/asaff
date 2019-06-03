@@ -23,7 +23,22 @@ header
 .tagline__static
     color: $grey
     margin: 0
+    
 
 .tagline__dynamic
     color: $blue
     margin-top: 10px
+    text-align: center
+
+@keyframes fade-in 
+    from 
+        opacity: 0
+    to
+        opacity: 1
+
+.textOne 
+    animation: fade-in 3s ease-in-out infinite
+
+.textTwo
+    animation: fade-in 3s ease-in-out infinite
+    animation-delay: 2s
