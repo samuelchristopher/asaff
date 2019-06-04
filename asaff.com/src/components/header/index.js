@@ -10,9 +10,10 @@ const Header = () => (
 			<p class={style.tagline__static}>We can help you with</p>
 			{" "}
 			<TextLoop mask={true} interval={2000} springConfig={{ stiffness: 120, damping: 15 }}>
-				<h1 class={style.tagline__dynamic}>ICT</h1>
+				<h1 class={style.tagline__dynamic}>Logistics</h1>
 				<h1 class={style.tagline__dynamic}>Shipping</h1>
-				<h1 class={style.tagline__dynamic}>Freight Forwarding</h1>
+				<h1 class={style.tagline__dynamic}>Forwarding</h1>
+				<h1 class={style.tagline__dynamic}>ICT</h1>
 			</TextLoop>
 		</div>
 	</header>

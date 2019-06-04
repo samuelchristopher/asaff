@@ -17,7 +17,7 @@ const Home = () => (
 			companyName="Abdul Saman Ahmad Freight Forwarding"
 			blockClass="freightBlock"
 			bgClass="freightForwardingBg"
-			desc="We offer Muara Container Terminal Operation, International Freight Forwarding Services, International Relocation Services, Warehousing Services."
+			desc="We offer Container terminal operations, International Freight Forwarding Services, International Relocation Services, Warehousing Services."
 			logos={[
 				{
 					title: 'partners',
@@ -43,15 +43,15 @@ const Home = () => (
 			]}
 			/>
 		<CompanyCard 
-			companyName="ASAFF Solutions"
+			companyName="ASAFF Solutions Sdn Bhd"
 			bgClass="solutionsBg"
 			blockClass="solutionsBlock"
 			pushDown="30px"
-			desc="We offer training & seminar on ICT & Telecommunication, telecommunication Solution & ICT, Telecommunication Equipment"
+			desc="We offer cutting edge technology, training and development solutions. Please contact us at schristopher@asaff.com or call us at 673 2442959/2445959"
 			logos={[
 				{
 					title: 'partners',
-					logoClasses: [ 'dst', 'progresif', 'telbru', 'ibm' ]
+					logoClasses: [ 'ibm', 'novaris', 'rei', 'kaile', 'abl', 'gd', 'sumitomo', 'dibta', 'sscs', 'cobham', 'netsweeper', 'genband', 'informatics', 'r', 'usm']
 				},
 				{
 					title: 'accredited by',
