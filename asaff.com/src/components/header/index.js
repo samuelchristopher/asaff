@@ -7,7 +7,7 @@ const Header = () => (
 	<header>
 		<div class={style.asaffLogo}></div>
 		<div class={style.tagline__container}>
-			<p class={style.tagline__static}>We can help you with</p>
+			<p class={style.tagline__static}>We can assist you with</p>
 			{" "}
 			<TextLoop mask={true} interval={2000} springConfig={{ stiffness: 120, damping: 15 }}>
 				<h1 class={style.tagline__dynamic}>Logistics</h1>
